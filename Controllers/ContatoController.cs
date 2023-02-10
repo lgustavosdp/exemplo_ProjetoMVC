@@ -17,7 +17,7 @@ namespace PROJETOMVC.Controllers
         public IActionResult Index()
         {
             var contatos = _context.Contatos.ToList();
-            return View();
+            return View(contatos);
         }
 
     }
